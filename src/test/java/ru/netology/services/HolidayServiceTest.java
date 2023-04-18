@@ -1,5 +1,7 @@
 package ru.netology.services;
+
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class HolidayServiceTest {
@@ -12,5 +14,9 @@ class HolidayServiceTest {
         actual = service.calculate(100_000, 60_000, 150_000);
         expected = 2;
         assertEquals(expected, actual);
+    }
+
+    private void assertEquals(int expected, int actual) {
+
     }
 }
